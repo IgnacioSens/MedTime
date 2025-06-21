@@ -1,0 +1,274 @@
+.fonte {
+    display: flex;
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    width: 250px;
+    color: #41479B;
+    justify-content: flex-end;
+    align-items: center;
+    height: 83px;
+}
+
+.fonte2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    color: black;
+  }
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+    width:100%;
+    margin-left: 30px;
+    gap: 5px;
+}
+.container2 {
+    display: flex;
+    height: 500px;
+    width: 100%; 
+}
+.container3{
+    background-color: #FBB95D; /* azul semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    color: #41479B;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container h2 {
+  flex: 1 1 200px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.form-group {
+  flex: 3 1 600px;
+  display: flex;
+  gap: 15px;
+  align-items: center; /* alinha verticalmente inputs e botão */
+}
+
+.form-group input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+.form-group input::placeholder {
+  color: #41479B(255, 255, 255, 0.7);
+}
+
+.form-group button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #41479B; /* vermelho similar */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0; /* botão não encolhe */
+}
+
+.form-group button:hover {
+  background-color: #c81f47; /* efeito hover */
+}
+
+
+
+.espaco {
+    display: flex;
+    width: 850px;
+    height: 100px;
+}
+.espaco2{
+    width: 300px;
+}
+
+.botao{
+    padding: 10px 20px;                /* Espaçamento interno */
+    font-size: 16px;                   /* Tamanho do texto */
+    color: #41479B;                      /* Cor do texto */
+    border: none;
+    background-color: #FBB95D;
+    border-radius: 5px;                /* Bordas arredondadas */
+    cursor: pointer;                   /* Ícone de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+.botao:hover{
+    background-color: #41479B; /* Muda a cor ao passar o mouse */
+    color: #FBB95D;
+    transform: scale(1.1);     /* Aumenta ligeiramente o tamanho */
+}
+.botaoContainer{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    gap: 5px;
+}
+.linha1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+.linha2{
+   background-color: #41479B;
+    width: 97%;
+    height: 10px;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.ola{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 70px;
+    height: 10px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 400px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.ola:hover{
+    transform: scale(1.1);
+    color: #00c3ff;
+}
+.apresentacao2{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 700px;
+    height: 200px;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+}
+
+body {
+    background-image: url('images/background.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    height: 95vh; /* Faz o fundo ocupar a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+    overflow-x: hidden; /* Esconde o excesso horizontal */
+}
+
+.autoria{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 1650px;
+    height: 200px;
+    align-items: center;
+    text-align: left; /* Adicione esta linha */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+
+.fundoNovo {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* altura da tela inteira */
+    background-image: url(imagens/idosos-devem-manter-se-ativos.webp);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fundoNovo::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(25, 79, 165, 0.8); /* azul semitransparente */
+    backdrop-filter: blur(4px); /* desfoque */
+    -webkit-backdrop-filter: blur(4px); /* para Safari */
+    z-index: 1;
+  }
+
+  .conteudoNovo {
+    position: relative;
+    z-index: 2; /* fica acima do overlay azul */
+    color: white;
+    padding: 20px;
+  }
+
+  .espacoNovo {
+    display: flex;
+    width: 250px;
+  }
+
+  .apresentacao3{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 400px;
+    height: 200px;
+    align-items: top;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+}
+
+.formulario {
+  display: flex;
+  width: 800px;
+  gap: 20px; /* espaçamento entre os inputs */
+}
+
+.formulario input {
+  flex: 1; /* todos inputs com largura igual */
+  padding: 10px 20px;
+  border-radius: 25px; /* bordas arredondadas */
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3); /* fundo semi-transparente */
+  color: white; /* cor do texto */
+  font-size: 16px;
+  outline: none;
+}
+
+.formulario input::placeholder {
+  color: #eee; /* cor do texto placeholder */
+}
