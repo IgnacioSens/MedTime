@@ -43,7 +43,7 @@
     </div>
     <div class="container3">
         <div class="espacoNovo"></div>
-        <p class="apresentacao3">Faça sua simulação: </p>
+        <p class="apresentacao3" style="margin: 0; display: flex; align-items: center;">Faça sua simulação: </p>
         <div class="form-group">
         <input type="text" placeholder="Número do cartão:" />
         <input type="text" placeholder="Data de validade:" />
@@ -52,8 +52,49 @@
         </div>
     </div>
   </div>
+    <div class="azul"></div>
+    <div class="transicao"></div>
+    <div class="amarelo">
+        <div class="quem-somos">
+        <h2 style="color: #1F4CA4;">Quem somos?</h2>     
+        </div>
+    </div>
+    <div class="espacoContainer2">
+    <div class="espacoContainer" style="color: #1F4CA4;">
+        <h2>Somos uma startup dedicada a melhorar a qualidade de vida dos idosos, oferecendo uma solução integrada que conecta um aplicativo a um relógio inteligente. Nosso sistema facilita o monitoramento da saúde, o lembrete de medicações e a comunicação rápida em situações de emergência, promovendo segurança, autonomia e tranquilidade para idosos e seus cuidadores.</h3>
+    </div>
+
+    </div>
 </div>
     
+<script>
+window.addEventListener('scroll', () => {
+  const element = document.querySelector('.quem-somos');
+  if (!element) return; // caso o elemento não exista
+
+  const position = element.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (position < screenPosition) {
+    element.classList.add('show');
+  } else {
+    element.classList.remove('show');
+  }
+});
+window.addEventListener('scroll', () => {
+  const element = document.querySelector('.espacoContainer');
+  if (!element) return; // caso o elemento não exista
+
+  const position = element.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (position < screenPosition) {
+    element.classList.add('show');
+  } else {
+    element.classList.remove('show');
+  }
+});
+</script>
 
 </body>
 </html>

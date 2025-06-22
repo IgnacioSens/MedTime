@@ -45,8 +45,14 @@
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.titulo-simulacao {
+  margin: 0; /* remove margem padrão */
+  display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .container h2 {
@@ -235,7 +241,7 @@ body {
 
   .espacoNovo {
     display: flex;
-    width: 250px;
+    width: 100px;
   }
 
   .apresentacao3{
@@ -271,4 +277,62 @@ body {
 
 .formulario input::placeholder {
   color: #eee; /* cor do texto placeholder */
+}
+
+.espacoContainer2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+.espacoContainer{
+  display: flex;
+  width: 60%;
+  height: 300px;
+  background-color: #FBB95D;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+}
+
+
+.azul {
+  background-color: #1F4CA4;
+  height: 200px; /* exemplo */
+}
+
+.transicao {
+  height: 130px;
+  background: linear-gradient(to bottom, #1F4CA4, #FBB95D);
+}
+
+.amarelo {
+  background-color: #FBB95D;
+  height: 100px; /* exemplo */
+}
+
+.quem-somos {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.quem-somos.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.espacoContainer.show{
+   opacity: 1;
+  transform: translateY(0);
 }
